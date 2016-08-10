@@ -1,0 +1,5 @@
+
+[XmlConfiguredInstance_Worker-1] 2016-08-05 17:28:25,084 INFO: Hello Instinct!8/5/2016 5:28:24 PM
+[XmlConfiguredInstance_Worker-4] 2016-08-05 17:28:25,086 INFO: Hello Instinct!8/5/2016 5:28:24 PM
+[XmlConfiguredInstance_Worker-3] 2016-08-05 17:28:25,089 INFO: Hello Instinct!8/5/2016 5:28:24 PM
+[XmlConfiguredInstance_Worker-2] 2016-08-05 17:28:25,086 INFO: Hello Instinct!8/5/2016 5:28:24 PM

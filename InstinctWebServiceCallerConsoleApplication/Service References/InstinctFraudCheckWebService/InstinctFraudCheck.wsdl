@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://dectechsolutions.com/Instinct" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://dectechsolutions.com/Instinct" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://dectechsolutions.com/Instinct">
+      <s:element name="InstinctFraudCheck_String">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="inputString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InstinctFraudCheck_StringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InstinctFraudCheck_StringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InstinctFraudCheck_XMLString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="inputXMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InstinctFraudCheck_XMLStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InstinctFraudCheck_XMLStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitApplication_String">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="inputString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitApplication_StringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubmitApplication_StringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InstinctFraudCheck_StringSoapIn">
+    <wsdl:part name="parameters" element="tns:InstinctFraudCheck_String" />
+  </wsdl:message>
+  <wsdl:message name="InstinctFraudCheck_StringSoapOut">
+    <wsdl:part name="parameters" element="tns:InstinctFraudCheck_StringResponse" />
+  </wsdl:message>
+  <wsdl:message name="InstinctFraudCheck_XMLStringSoapIn">
+    <wsdl:part name="parameters" element="tns:InstinctFraudCheck_XMLString" />
+  </wsdl:message>
+  <wsdl:message name="InstinctFraudCheck_XMLStringSoapOut">
+    <wsdl:part name="parameters" element="tns:InstinctFraudCheck_XMLStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitApplication_StringSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitApplication_String" />
+  </wsdl:message>
+  <wsdl:message name="SubmitApplication_StringSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitApplication_StringResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OnlineFraudCheckSoap">
+    <wsdl:operation name="InstinctFraudCheck_String">
+      <wsdl:input message="tns:InstinctFraudCheck_StringSoapIn" />
+      <wsdl:output message="tns:InstinctFraudCheck_StringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InstinctFraudCheck_XMLString">
+      <wsdl:input message="tns:InstinctFraudCheck_XMLStringSoapIn" />
+      <wsdl:output message="tns:InstinctFraudCheck_XMLStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitApplication_String">
+      <wsdl:input message="tns:SubmitApplication_StringSoapIn" />
+      <wsdl:output message="tns:SubmitApplication_StringSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OnlineFraudCheckSoap" type="tns:OnlineFraudCheckSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InstinctFraudCheck_String">
+      <soap:operation soapAction="http://dectechsolutions.com/Instinct/InstinctFraudCheck_String" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InstinctFraudCheck_XMLString">
+      <soap:operation soapAction="http://dectechsolutions.com/Instinct/InstinctFraudCheck_XMLString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitApplication_String">
+      <soap:operation soapAction="http://dectechsolutions.com/Instinct/SubmitApplication_String" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OnlineFraudCheckSoap12" type="tns:OnlineFraudCheckSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InstinctFraudCheck_String">
+      <soap12:operation soapAction="http://dectechsolutions.com/Instinct/InstinctFraudCheck_String" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InstinctFraudCheck_XMLString">
+      <soap12:operation soapAction="http://dectechsolutions.com/Instinct/InstinctFraudCheck_XMLString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitApplication_String">
+      <soap12:operation soapAction="http://dectechsolutions.com/Instinct/SubmitApplication_String" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OnlineFraudCheck">
+    <wsdl:port name="OnlineFraudCheckSoap" binding="tns:OnlineFraudCheckSoap">
+      <soap:address location="http://localhost/InstinctFraudCheckSP/InstinctFraudCheck.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OnlineFraudCheckSoap12" binding="tns:OnlineFraudCheckSoap12">
+      <soap12:address location="http://localhost/InstinctFraudCheckSP/InstinctFraudCheck.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

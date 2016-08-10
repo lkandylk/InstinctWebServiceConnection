@@ -1,0 +1,21 @@
+
+[XmlConfiguredInstance_Worker-1] 2016-08-08 16:18:57,305 INFO: Hello Instinct!8/8/2016 16:18:57
+[XmlConfiguredInstance_Worker-2] 2016-08-08 16:19:00,173 INFO: Hello Instinct!8/8/2016 16:19:00
+[XmlConfiguredInstance_Worker-3] 2016-08-08 16:19:03,172 INFO: Hello Instinct!8/8/2016 16:19:03
+[XmlConfiguredInstance_Worker-4] 2016-08-08 16:19:06,173 INFO: Hello Instinct!8/8/2016 16:19:06
+[XmlConfiguredInstance_Worker-5] 2016-08-08 16:19:09,173 INFO: Hello Instinct!8/8/2016 16:19:09
+[XmlConfiguredInstance_Worker-1] 2016-08-08 16:19:12,173 INFO: Hello Instinct!8/8/2016 16:19:12
+[XmlConfiguredInstance_Worker-2] 2016-08-08 16:19:15,173 INFO: Hello Instinct!8/8/2016 16:19:15
+[XmlConfiguredInstance_Worker-3] 2016-08-08 16:19:18,173 INFO: Hello Instinct!8/8/2016 16:19:18
+[XmlConfiguredInstance_Worker-4] 2016-08-08 16:19:21,173 INFO: Hello Instinct!8/8/2016 16:19:21
+[XmlConfiguredInstance_Worker-5] 2016-08-08 16:19:24,173 INFO: Hello Instinct!8/8/2016 16:19:24
+[XmlConfiguredInstance_Worker-1] 2016-08-08 16:19:27,172 INFO: Hello Instinct!8/8/2016 16:19:27
+[XmlConfiguredInstance_Worker-2] 2016-08-08 16:19:30,173 INFO: Hello Instinct!8/8/2016 16:19:30
+[XmlConfiguredInstance_Worker-3] 2016-08-08 16:19:33,173 INFO: Hello Instinct!8/8/2016 16:19:33
+[XmlConfiguredInstance_Worker-1] 2016-08-08 16:21:00,121 INFO: Hello Instinct!8/8/2016 16:21:00
+[XmlConfiguredInstance_Worker-1] 2016-08-08 16:29:37,296 INFO: Hello Instinct!8/8/2016 16:29:37
+[XmlConfiguredInstance_Worker-2] 2016-08-08 16:29:40,168 INFO: Hello Instinct!8/8/2016 16:29:40
+[XmlConfiguredInstance_Worker-3] 2016-08-08 16:29:43,166 INFO: Hello Instinct!8/8/2016 16:29:43
+[XmlConfiguredInstance_Worker-4] 2016-08-08 16:29:46,167 INFO: Hello Instinct!8/8/2016 16:29:46
+[XmlConfiguredInstance_Worker-5] 2016-08-08 16:29:49,167 INFO: Hello Instinct!8/8/2016 16:29:49
+[XmlConfiguredInstance_Worker-1] 2016-08-08 16:29:52,167 INFO: Hello Instinct!8/8/2016 16:29:52

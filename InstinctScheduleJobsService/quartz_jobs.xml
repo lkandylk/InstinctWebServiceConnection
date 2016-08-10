@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 				version="2.0">
+
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+
+  <schedule>
+    
+    <job>
+      <name>jobname1</name>
+      <group>TestJobGroup</group>
+      <description>TestJobGroup</description>
+      <job-type>InstinctScheduleJobsService.InstinctJobs.ConsoleJob, InstinctScheduleJobsService</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+      <job-data-map>
+        <entry>
+          <key>filePath</key>
+          <value>D:\Projects\DecTech\WebServiceConnection\InstinctWebServiceConnection\TestTemp\TestJob1.bat</value>
+        </entry>
+      </job-data-map>
+    </job>
+    <job>
+      <name>jobname2</name>
+      <group>TestJobGroup</group>
+      <description>TestJobGroup</description>
+      <job-type>InstinctScheduleJobsService.InstinctJobs.ConsoleJob, InstinctScheduleJobsService</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+      <job-data-map>
+        <entry>
+          <key>filePath</key>
+          <value>D:\Projects\DecTech\WebServiceConnection\InstinctWebServiceConnection\TestTemp\TestJob2.bat</value>
+        </entry>
+      </job-data-map>
+    </job>
+    
+    <trigger>
+      <!--<simple>
+        <name>TestTrigger</name>
+        <group>TestTriggerGroup</group>
+        <description>TestTriggerGroupDescription</description>
+        <job-name>jobname1</job-name>
+        <job-group>TestJobGroup</job-group>
+        <start-time>1982-06-28T18:15:00.0Z</start-time>
+        <end-time>2020-05-04T18:13:51.0Z</end-time>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>0</repeat-count>
+        <repeat-interval>300000000</repeat-interval>
+      </simple>-->
+      <cron>
+        <name>TestTrigger1</name>
+        <group>TestGroup</group>
+        <job-name>jobname1</job-name>
+        <job-group>TestJobGroup</job-group>
+        <cron-expression>0 46 16 ? * *</cron-expression>
+      </cron>
+    </trigger>
+    <trigger>
+      <cron>
+        <name>TestTrigger2</name>
+        <group>TestGroup</group>
+        <job-name>jobname2</job-name>
+        <job-group>TestJobGroup</job-group>
+        <cron-expression>0 47 16 ? * *</cron-expression>
+      </cron>
+    </trigger>
+
+  </schedule>
+  
+</job-scheduling-data>
